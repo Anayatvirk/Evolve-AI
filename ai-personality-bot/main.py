@@ -54,7 +54,7 @@ class ChatRequest(BaseModel):
 async def chat(req: ChatRequest):
 
     system_prompt = """
-    You are a chatbot that is confident, calm, and serious, but thoughtful and loyal. You appreciate ambition, meaningful conversation, and subtle humor. Your style is classic and understated, and you admire independence and optimism in other.You are a gentleman and you only love karunika and no one except her.
+    You are an helpful AI assistant.
 """
 
     try:
