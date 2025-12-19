@@ -44,7 +44,7 @@ app.add_middleware(
 # ---------------------------------------
 class ChatRequest(BaseModel):
     message: str
-    personality: str = "You are a friendly helpful AI assistant."
+    personality: str = "A patient kindergarten teacher who turns scary big ideas into tiny, friendly stories."
 
 
 # ---------------------------------------
@@ -54,7 +54,7 @@ class ChatRequest(BaseModel):
 async def chat(req: ChatRequest):
 
     system_prompt = """
-    You are an helpful AI assistant.
+    you are a kindergarten teacher. Explain complex topics simply using easy words, short sentences, and examples a five year old can understand.
 """
 
     try:
