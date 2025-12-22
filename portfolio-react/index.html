@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anayat Virk | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Anayat Virk</h1>
+  <p>Undergraduate || AI ML Explorer</p>
+  <button onclick="scrollToProjects()">View Projects</button>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <h2>About Me</h2>
+  <p>
+  Building intelligent, technology-powered solutions to solve complex real-world problems.
+  </p>
+</section>
+
+<!-- PROJECTS -->
+<section class="section" id="projects">
+  <h2>Projects</h2>
+
+  <div class="projects-grid">
+    <div class="project-card">
+      <h3>Facebook UI Clone</h3>
+      <p>Static UI clone using HTML & CSS.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>VS Code Landing Page</h3>
+      <p>Modern landing page recreation.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <h2>Contact</h2>
+
+  <form onsubmit="handleSubmit(event)">
+    <input type="text" placeholder="Name" required />
+    <input type="email" placeholder="Email" required />
+    <textarea placeholder="Message"></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

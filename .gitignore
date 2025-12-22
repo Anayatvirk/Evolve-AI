@@ -1,7 +1,5 @@
-*
-!react-project2/
-!zerodha/
-!vs_code/
-!facebook/
-!.gitignore
+node_modules/
+venv/
+__pycache__/
+*.pyc
 

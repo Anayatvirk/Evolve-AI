@@ -1,0 +1,140 @@
+*body {
+  background: red !important;
+}
+ {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+
+/* GLOBAL */
+body {
+  background: #0e1117;
+  color: #e6edf3;
+  line-height: 1.6;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: radial-gradient(circle at top, #161b22, #0e1117);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3.2rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #8b949e;
+  margin-bottom: 30px;
+}
+
+.hero button {
+  background: #2ea043;
+  color: white;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.hero button:hover {
+  background: #3fb950;
+  transform: translateY(-2px);
+}
+
+/* SECTIONS */
+.section {
+  padding: 90px 10%;
+}
+
+.section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.section p {
+  color: #8b949e;
+  max-width: 700px;
+}
+
+/* PROJECTS */
+.projects-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: #161b22;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+  transition: transform 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+/* CONTACT */
+.contact form {
+  max-width: 500px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+input,
+textarea {
+  background: #161b22;
+  border: 1px solid #30363d;
+  padding: 12px;
+  border-radius: 8px;
+  color: #e6edf3;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #8b949e;
+}
+
+.contact button {
+  background: #2ea043;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background: #3fb950;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.4rem;
+  }
+
+  .section {
+    padding: 70px 6%;
+  }
+}
+
